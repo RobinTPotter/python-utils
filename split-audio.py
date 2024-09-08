@@ -75,7 +75,7 @@ def split_audio(input_file, silence_end_times, min_duration=600):
     
     # Split the remaining part after the last silence point
     if last_split < get_audio_duration(input_file):
-        output_file = f'output_{segment_num:03d}.opus'
+        output_file = f'{segment_num:03d}-{input_file}'
         command = [
             'ffmpeg', '-i', input_file, '-ss', str(last_split), '-c', 'copy', output_file
         ]
