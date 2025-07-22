@@ -16,5 +16,9 @@ use pygame to map samples to keys on a keyboard. helped by chatgpt, which is why
 
 # sample-player-batch.py
 
-use pygame to map samples to keys on keyboard, supply samples.txt to map QWER..NM within numbered "banks". use number keys to switch banks. 
+use pygame to map samples to keys on keyboard, supply samples.txt to map QWER..NM within numbered "banks". use number keys to switch banks.
+
+# vob_to_wav3.py
+
+chatgpt also helped (and didn't) with this. it did most of the tkinter stuff though, but it messed up the stdout read which is why it's messy but does work. its a gui util to extract dvd audio tracks from a disc and convert to wav or mp3. there's a hardcoded path to mplayer and ffmpeg. written for my dad who records radio shows on a dvd recorder.
 
